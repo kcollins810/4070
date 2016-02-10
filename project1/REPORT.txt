@@ -1,0 +1,13 @@
+This game is essentially asteroids where the objective of the game is to shoot the 
+"asteroids"--which are giant 0s and 1s. If a 0 or 1 hits your "ship--which is a mouse 
+cursor--then you will lose a life. You start with three lifes. When you shoot and hit 
+a 0 or a 1, they will split into smaller 0's and 1's. Each time you clear the field of 
+0s and 1s, you enter the next level where more 0s and 1s will spawn. Losing all three 
+of your lives will result in a game over. The graphics--including the text--are all 
+done using vectors. The cursor ship is animated with a flame when you are moving it 
+and is able to rotate. The 0s and 1s are freely rotating around the canvas. Scoring 
+works when you successfully hit and destroy a 0 or 1.
+
+To play the game, simply, press spacebar to begin and use spacebar to shoot and the 
+arrow keys to move your cursor ship around. Spacebar is used to respawn your cursor 
+ship if you are hit.

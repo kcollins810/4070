@@ -1,0 +1,4 @@
+Definition of Game Objects:		Cursor Ship / 0s and 1s Asteroids / Bullets
+Animation of Game Objects: 		Controlled moving ship / Travelling bullets / Floating and rotating asteroids
+Interaction between Game Objects:	Ship shoots bullets / Bullets hit asteroids / Asteroids hit ship
+Keeping Score:				Score increments with hitting asteroids with bullets
