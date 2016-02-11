@@ -1,4 +1,4 @@
-var AsteroidSize = 10;
+var AsteroidSize = 4;
 
 var GameState = State.extend({
 
@@ -17,7 +17,7 @@ var GameState = State.extend({
 		this.lives = 3;
 		this.gameOver = false;
 		this.score = 0;
-		this.lvl = 4;
+		this.lvl = 10;
 
 		//create lifepolygons
 		this.lifepolygon = new Polygon(Points.SHIP);
@@ -169,7 +169,7 @@ var GameState = State.extend({
 
 		// check if lvl completed
 		if (this.asteroids.length === 0) {
-			this.lvl++;
+			this.lvl+=5;
 			this.generateLvl();
 		}
 	},
@@ -192,7 +192,7 @@ var GameState = State.extend({
 		}
 		//end screen
 		if (this.gameOver) {
-			ctx.vectorText("GAME OVER", 6, null, 250);
+			ctx.vectorText("GAME OVER", 5, null, 250);
 			ctx.vectorText("YOUR SCORE IS " + this.score, 4, null, null);
 			ctx.vectorText("THANKS FOR PLAYING", 3, null, window.innerHeight/2 + 140);
 			ctx.vectorText("PRESS SPACE TO RESTART", 3, null, window.innerHeight/2 + 200);
